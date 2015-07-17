@@ -1,0 +1,16 @@
+<meta>
+	<file src="img/eq_bg.png" />
+	<file src="img/eq_circle.png" />
+
+	<script src="ekwipunek_c.lua" type="client" />
+	<script src="ekwipunek_s.lua" type="server" />
+	
+	<script src="bron_s.lua" type="server" />
+	<script src="bron_c.lua" type="client" />
+
+	<script src="carkeys.lua" type="server" />
+	
+	<export function="hasPlayerItem" type="server" />
+	
+	<export function="isActive" type="client" />
+</meta>

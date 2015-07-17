@@ -1,0 +1,5 @@
+<meta>
+	<oop>true</oop>
+	<script src="auth.lua" type="server" />
+	<script src="auth_c.lua" type="client" />
+</meta>

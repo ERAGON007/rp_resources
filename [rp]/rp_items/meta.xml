@@ -1,0 +1,14 @@
+<meta>
+	<file src="img/eq_bg.png" />
+	<file src="img/eq_circle.png" />
+
+	<script src="items.lua" type="server" />
+
+	<script src="playeritems_c.lua" type="client" />
+	<script src="playeritems.lua" type="server" />
+
+	<script src="weapons.lua" type="server" />
+	<script src="weapons_c.lua" type="client" />
+
+	<script src="carkeys.lua" type="server" />
+</meta>

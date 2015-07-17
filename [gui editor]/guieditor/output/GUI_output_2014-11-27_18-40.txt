@@ -1,0 +1,24 @@
+
+GroupManOnline = {}
+GuiManInfo = {
+    tab = {}
+}
+GroupMan = {}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GroupMan.Window = guiCreateWindow(575, 225, 450, 450, "Nazwa Grupy", false)
+        guiWindowSetSizable(GroupMan.Window, false)
+
+        GroupMan.InfoTab = guiCreateTabPanel(19, 26, 410, 396, false, GroupMan.Window)
+
+        GuiManInfo.tab[1] = guiCreateTab("Info", GroupMan.InfoTab)
+
+        GuiManInfo.DutyButton = guiCreateButton(163, 250, 125, 80, "Służba", false, GuiManInfo.tab[1])
+
+        GroupMan.OnlineTab = guiCreateTab("Online", GroupMan.InfoTab)
+
+        GroupManOnline.Gridlist = guiCreateGridList(2, 2, 408, 370, false, GroupMan.OnlineTab)
+        guiGridListAddColumn(GroupManOnline.Gridlist, "ID", 0.5)
+        guiGridListAddColumn(GroupManOnline.Gridlist, "Nazwa", 0.5)    
+    end
+)

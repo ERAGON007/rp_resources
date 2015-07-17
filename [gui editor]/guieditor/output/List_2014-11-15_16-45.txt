@@ -1,0 +1,15 @@
+
+List = {}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        List.Window = guiCreateWindow(0.38, 0.28, 0.25, 0.50, "Twoje grupy", true)
+        guiWindowSetMovable(List.Window, false)
+        guiWindowSetSizable(List.Window, false)
+
+        List.Gridlist = guiCreateGridList(0.04, 0.07, 0.94, 0.80, true, List.Window)
+        guiGridListAddColumn(List.Gridlist, "UID", 0.5)
+        guiGridListAddColumn(List.Gridlist, "Nazwa", 0.5)
+        List.ChooseButton = guiCreateButton(0.04, 0.88, 0.44, 0.10, "Wybierz", true, List.Window)
+        List.CloseButton = guiCreateButton(0.50, 0.88, 0.45, 0.09, "Anuluj", true, List.Window)    
+    end
+)

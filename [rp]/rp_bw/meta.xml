@@ -1,0 +1,5 @@
+<meta>
+	<script src="bw_c.lua" type="client" />
+
+	<file src="bw.fx" />
+</meta>

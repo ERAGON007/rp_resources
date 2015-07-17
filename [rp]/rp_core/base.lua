@@ -1,0 +1,30 @@
+addEvent("spawn", true)
+addEventHandler("spawn", root, function()
+	charInfo = getElementData(client, "charInfo")
+	spawnPlayer(client, 1481.8495, -1687.1045, 14.0469, 178.7321)
+	fadeCamera(client, true)
+	setCameraTarget(client, client)
+	setElementModel(client, charInfo.skin)
+	setPlayerName(client, charInfo.name)
+	setPlayerMoney(client, charInfo.money, true)
+	triggerClientEvent(client, "reloadPlayerObjects", client)
+	triggerEvent("fetchPlayerGroups", client)
+end)
+
+addEventHandler("onPlayerJoin", root, function()
+	--chowamy "pasek nad głową"
+	setPlayerNametagShowing(source, false)
+end)
+
+addEventHandler("onResourceStart", resourceRoot, function()
+	local realTime = getRealTime()
+	setTime(realTime.hour, realTime.minute)
+	setMinuteDuration(60000)
+	setTimer(timerCoMinute, 60*1000, 0)
+end)
+
+function timerCoMinute()
+	local realTime = getRealTime()
+	setTime(realTime.hour, realTime.minute)
+	setMinuteDuration(60000)
+end

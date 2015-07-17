@@ -1,0 +1,7 @@
+<meta>
+	<script src="fonts_c.lua" type="client" />
+	<file src="myriadproregular.ttf" />
+	<file src="Avgardn.ttf" />
+	<file src="myriadprocondensed.ttf" />
+	<export function="getFont" type="client" />
+</meta>

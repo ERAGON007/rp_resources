@@ -1,0 +1,9 @@
+<meta>
+	<script src="notifications_c.lua" type="client" />
+	<script src="notifications.lua" type="server" />
+
+	<export function="showBox" type="server" />
+	<export function="showBox" type="client" />
+
+	<file src="img/info.png" />
+</meta>
